@@ -6,18 +6,20 @@
     <style type="text/css" ><!-- @import url("styles.css"); --></style>
     <script src="jquery-3.2.1.js"></script>
     <script>
-      function print() {
-      var x = document.getElementById("boxes");
-      var text = "";
-      for (var i = 0; i < x.length ;i++) {
-          text += x.elements[i].value + "<br>";
+      function printElements() {
+        var x = document.getElementById("boxes");
+        var text = "";
+        var i;
+        for (i = 0; i < x.length ;i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
       }
-      document.getElementById("demo").innerHTML = text;
-  }
       
       $(document).ready(function() {
-        $("#sub").click(print()); //NOT WORKING YET!!! PLEASE FIX!!!
-          
+        $("#sub").click(function() {
+          printElements();
+        });
           /**ORIGINAL CLICK THING THAT WOULD ADD A ROW EVERY TIME
           function(){            
           $("#dTable").append("<tr><td>Thing 1</td><td>Thing 2</td><td>Thing 3</td><td>Thing 4</td><td>Thing 5</td></tr>");
@@ -46,7 +48,7 @@
       Phone Number: <input type="text" name="number"><br><br>
       <!--<input type="submit" value="Submit">-->
     </form>
-    <button id="sub">Add new person</button> <!--DOESN'T WORK-->
+    <button id="sub">Print your submission</button> <!--DOESN'T WORK-->
     <p id="demo"></p>
   </body>
 </html>
