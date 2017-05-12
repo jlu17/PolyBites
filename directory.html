@@ -3,13 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <title>Directory</title>
-    
+    <style type="text/css" ><!-- @import url("styles.css"); --></style>
     <script>
       $(document).ready(function() {
-        
-      });
+        $("#click").click(function(){            
+            $("#dTable").append('<tr><td>Thing 1</td><td>Thing 2</td><td>Thing 3</td><td>Thing 4</td><td>Thing 5</td></tr>');
+        });
+      });    
   	</script>
   </head>
+  
   <body>
+    <div>
+      <table id="dTable">
+        <tr>
+          <!--Table headers: Will always stay the same when you reload the page-->
+          <th>Full Name</th>
+          <th>Restaurant</th> 
+          <th>Time They're Going</th>
+          <th>Delivery Fee</th>
+          <th>Phone Number</th>
+        </tr>
+      </table>
+      <button id="click">Add a row</button>
+    </div>
   </body>
 </html>
