@@ -4,34 +4,32 @@
     <meta charset="UTF-8" />
     <title>Directory</title>
     <style type="text/css" ><!-- @import url("styles.css"); --></style>
+    <script src="jquery-3.2.1.js"></script>
     <script>
       $(document).ready(function() {
         $("#click").click(function(){            
-            $("#dTable").append('<tr><td>Thing 1</td><td>Thing 2</td><td>Thing 3</td><td>Thing 4</td><td>Thing 5</td></tr>');
+          $("#dTable").append("<tr><td>Thing 1</td><td>Thing 2</td><td>Thing 3</td><td>Thing 4</td><td>Thing 5</td></tr>");
         });
       });    
   	</script>
   </head>
   
   <body>
-    <div>
-      <table id="dTable">
+    <button id="click">Add a row</button>
+    <table id="dTable">
         <tr>
-          <!--Table headers: Will always stay the same when you reload the page-->
           <th>Full Name</th>
           <th>Restaurant</th> 
           <th>Time They're Going</th>
           <th>Delivery Fee</th>
           <th>Phone Number</th>
-        </tr>
-      </table>
-      <button id="click">Add a row</button>
-      
+        </tr>  
+    </table>
+    <!-- Commenting out to avoid any glitches
       <form id="boxes">
-        First name: <input type="text" name="fname"><br>
-        Last name: <input type="text" name="lname"><br><br>
-        <input type="submit" value="Submit">
-      </form> 
-    </div>
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form> -->
   </body>
 </html>
