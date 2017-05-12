@@ -3,13 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <title>Directory</title>
-    
+    <style type="text/css" ><!-- @import url("styles.css"); --></style>
+    <script src="jquery-3.2.1.js"></script>
     <script>
-      $(document).ready(function() {
+      //Adds row with info in it.
+      function addRow() {
+        var x = document.getElementById("boxes");
+        var text = "<tr>";
+        for (var i = 0; i < x.length; i++) {
+          text += "<td>" + x.elements[i].value + "</td>";
+        }
+        text += "</tr>";
+        $("#dTable").append(text);
         
-      });
+        x.reset();
+      }
+      
+      $(document).ready(function() {
+        $("#sub").click(function() {
+          //printElements();
+          addRow();
+        });
+      });    
   	</script>
   </head>
+  
   <body>
+    <div>
+      <table id="dTable">
+          <tr>
+            <th>Full Name</th>
+            <th>Restaurant</th> 
+            <th>Time They're Going</th>
+            <th>Delivery Fee</th>
+            <th>Phone Number</th>
+          </tr>  
+      </table>
+    </div>
+    <form id="boxes">
+      Full name: <input type="text"><br>
+      Restaurant: <input type="text"><br>
+      Time You Will Go: <input type="text"><br>
+      Delivery Fee: <input type="text"><br>
+      Phone Number: <input type="text"><br><br>
+    </form>
+    <button id="sub">Add row</button>
   </body>
 </html>
