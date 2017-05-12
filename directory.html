@@ -6,24 +6,24 @@
     <style type="text/css" ><!-- @import url("styles.css"); --></style>
     <script src="jquery-3.2.1.js"></script>
     <script>
-      function printElements() {
+      //Adds row with info in it.
+      function addRow() {
         var x = document.getElementById("boxes");
-        var text = "";
-        var i;
-        for (i = 0; i < x.length ;i++) {
-            text += x.elements[i].value + "<br>";
+        var text = "<tr>";
+        for (var i = 0; i < x.length; i++) {
+          text += "<td>" + x.elements[i].value + "</td>";
         }
-        document.getElementById("demo").innerHTML = text;
+        text += "</tr>";
+        $("#dTable").append(text);
+        
+        x.reset();
       }
       
       $(document).ready(function() {
         $("#sub").click(function() {
-          printElements();
+          //printElements();
+          addRow();
         });
-          /**ORIGINAL CLICK THING THAT WOULD ADD A ROW EVERY TIME
-          function(){            
-          $("#dTable").append("<tr><td>Thing 1</td><td>Thing 2</td><td>Thing 3</td><td>Thing 4</td><td>Thing 5</td></tr>");
-        });*/
       });    
   	</script>
   </head>
@@ -41,14 +41,12 @@
       </table>
     </div>
     <form id="boxes">
-      Full name: <input type="text" name="name"><br>
-      Restaurant: <input type="text" name="restaurant"><br>
-      Time You Will Go: <input type="text" name="time"><br>
-      Delivery Fee: <input type="text" name="fee"><br>
-      Phone Number: <input type="text" name="number"><br><br>
-      <!--<input type="submit" value="Submit">-->
+      Full name: <input type="text"><br>
+      Restaurant: <input type="text"><br>
+      Time You Will Go: <input type="text"><br>
+      Delivery Fee: <input type="text"><br>
+      Phone Number: <input type="text"><br><br>
     </form>
-    <button id="sub">Print your submission</button> <!--DOESN'T WORK-->
-    <p id="demo"></p>
+    <button id="sub">Add row</button>
   </body>
 </html>
