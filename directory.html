@@ -6,30 +6,47 @@
     <style type="text/css" ><!-- @import url("styles.css"); --></style>
     <script src="jquery-3.2.1.js"></script>
     <script>
+      function print() {
+      var x = document.getElementById("boxes");
+      var text = "";
+      for (var i = 0; i < x.length ;i++) {
+          text += x.elements[i].value + "<br>";
+      }
+      document.getElementById("demo").innerHTML = text;
+  }
+      
       $(document).ready(function() {
-        $("#click").click(function(){            
+        $("#sub").click(print()); //NOT WORKING YET!!! PLEASE FIX!!!
+          
+          /**ORIGINAL CLICK THING THAT WOULD ADD A ROW EVERY TIME
+          function(){            
           $("#dTable").append("<tr><td>Thing 1</td><td>Thing 2</td><td>Thing 3</td><td>Thing 4</td><td>Thing 5</td></tr>");
-        });
+        });*/
       });    
   	</script>
   </head>
   
   <body>
-    <button id="click">Add a row</button>
-    <table id="dTable">
-        <tr>
-          <th>Full Name</th>
-          <th>Restaurant</th> 
-          <th>Time They're Going</th>
-          <th>Delivery Fee</th>
-          <th>Phone Number</th>
-        </tr>  
-    </table>
-    <!-- Commenting out to avoid any glitches
-      <form id="boxes">
-      First name: <input type="text" name="fname"><br>
-      Last name: <input type="text" name="lname"><br><br>
-      <input type="submit" value="Submit">
-    </form> -->
+    <div>
+      <table id="dTable">
+          <tr>
+            <th>Full Name</th>
+            <th>Restaurant</th> 
+            <th>Time They're Going</th>
+            <th>Delivery Fee</th>
+            <th>Phone Number</th>
+          </tr>  
+      </table>
+    </div>
+    <form id="boxes">
+      Full name: <input type="text" name="name"><br>
+      Restaurant: <input type="text" name="restaurant"><br>
+      Time You Will Go: <input type="text" name="time"><br>
+      Delivery Fee: <input type="text" name="fee"><br>
+      Phone Number: <input type="text" name="number"><br><br>
+      <!--<input type="submit" value="Submit">-->
+    </form>
+    <button id="sub">Add new person</button> <!--DOESN'T WORK-->
+    <p id="demo"></p>
   </body>
 </html>
