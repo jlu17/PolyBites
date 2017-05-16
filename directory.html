@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Directory</title>
-    <style type="text/css" ><!-- @import url("styles.css"); --></style>
+    
     <script src="jquery-3.2.1.js"></script>
     <script>
       //Adds row with info in it.
@@ -20,7 +21,10 @@
       }
       
       $(document).ready(function() {
-        $("#sub").click(function() {
+        $("#sub").click(function()
+                      
+                        {
+          
           //printElements();
           addRow();
         });
@@ -29,24 +33,40 @@
   </head>
   
   <body>
-    <div>
+    <div id="form">
       <table id="dTable">
           <tr>
             <th>Full Name</th>
             <th>Restaurant</th> 
-            <th>Time They're Going</th>
+            <th>Delivery Time</th>
+           
             <th>Delivery Fee</th>
             <th>Phone Number</th>
-          </tr>  
+          </tr> 
+          <tr>
+            <td>Example name</td>
+            <td>Example restaurant</td>
+            <td>Example time</td>
+            <td>Example fee</td>
+            <td>Example  number</td>
+        </tr>
+        
       </table>
-    </div>
+      <h2 id="header"> Please Enter Your Information</h2>
+  
     <form id="boxes">
-      Full name: <input type="text"><br>
-      Restaurant: <input type="text"><br>
-      Time You Will Go: <input type="text"><br>
-      Delivery Fee: <input type="text"><br>
-      Phone Number: <input type="text"><br><br>
+      Full name: <input class="inputbox-edit" type="text"><br>
+      Restaurant: <input type="text"class="inputbox-edit"><br>
+      Time You Will Go: <input type="text" class="inputbox-edit"><br>
+      Delivery Fee: <input type="text" class="inputbox-edit"><br>
+      Phone Number: <input type="text" class="inputbox-edit"><br><br>
     </form>
-    <button id="sub">Add row</button>
+    <button id="sub" type="submit" >Submit</button>
+    </div>
+      <div id="img">
+      <img class="image" src="http://magnushealth.com/wp-content/uploads/2016/09/Poly_logo_colorPT144-232x300.jpg" alt="Poly Logo">
+      </div> 
+    
+    
   </body>
 </html>

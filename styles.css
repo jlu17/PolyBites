@@ -5,6 +5,7 @@ html {
   color: #333333;
   font-weight: normal;
 }
+
               
 .container  {
   margin: auto; 
@@ -27,3 +28,67 @@ html {
   text-decoration: none;
   font-size: 30px;
 }
+
+#form
+{border-color: white;
+    border-width: 10px;
+    border-style: solid;
+float: left;
+border-radius: 10px;
+background-color: white;
+margin: 20px;
+padding: 15px;
+}
+
+.inputbox-edit
+{
+  border-radius: 5px;
+  box-shadow: none; 
+}
+
+#sub{
+  border-radius: 10px;
+  box-shadow: none;
+  background-color: black;
+  font-family: "Serif", Georgia;
+  color: white;
+  padding: 6px;
+  font-size: 15px;
+  
+}
+
+#header
+{
+  font-family: "Serif", Georgia;
+  color: black;
+ 
+  
+}
+
+#img
+{
+   float: right;
+  
+}
+
+
+#dTable
+{
+  float: left;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom:  10px;
+  border-spacing: 0;
+}
+
+#dTable th {
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+#dTable td
+{
+  padding: 10px;
+}
+#boxes{ float: left;}
