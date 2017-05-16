@@ -1,17 +1,33 @@
 html {
-  
-  background-color: #ffb64d;
-  font-family: "Serif", Georgia;
+  font-family: "Georgia";
+  background-color:  #ffb366;
+  text-align: center;
+  color: #333333;
+  font-weight: normal;
 }
 
-.contentwrapper {
-  
-}
               
 .container  {
   margin: auto; 
   max-width: 800px; 
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
 } 
+
+#start {
+  background-color:  #ffb366;
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#start a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 30px;
+}
 
 #form
 {border-color: white;
@@ -76,5 +92,3 @@ padding: 15px;
   padding: 10px;
 }
 #boxes{ float: left;}
-
-
