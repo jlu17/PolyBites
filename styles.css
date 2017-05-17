@@ -1,7 +1,7 @@
-/** General styling to keep everything consistent! */
+/* General styling to keep everything consistent. */
 
 html {
-  font-family: "Trebuchet MS";
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   background-color:  #ffb366;
   text-align: center;
   color: #333333;
@@ -14,7 +14,12 @@ html {
   overflow: auto;
 }
 
-/** Homepage */  
+/* For a shrinking desktop display */
+@media (min-width: 500px) { 
+  /* To figure out later */            
+}  
+
+/* Homepage */  
 
 .container  {
   margin: auto; 
@@ -39,10 +44,26 @@ html {
   font-size: 30px;
 }
 
-/** Form page */
-#img {
-  float: right;  
+#start:hover {  
+  background-color: #ffa64d;
 }
+
+/* Form page */
+
+#form {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px 20px 0px 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+#img {
+   display: inline-block;
+}
+
+/* Table only */
 
 #dTable {
   float: left;
@@ -63,14 +84,7 @@ html {
   padding: 5px 10px 5px 10px;
 }
 
-#form {
-  float: left;
-  border-radius: 10px;
-  background-color: white;
-  margin: 20px;
-  padding: 15px;
-  text-align: center;
-}
+/* Form only */
 
 #enterInfo {
   margin: 100px 0px 20px 0px;
@@ -80,7 +94,7 @@ input {
   padding: 7px 10px;
   border-radius: 10px;
   display: inline-block;
-  border: #d9d9d9 solid;
+  border: #d9d9d9 solid 1px;
   margin-bottom: 5px;
   margin-left: -130px;
 }
@@ -91,14 +105,19 @@ label {
   clear: left;
   width: 290px;
   text-align: right;
-  margin: 10px;
+  margin: 9px;
 }
 
 #sub {
-  background-color: #d9d9d9;
+  background-color: #ffb366;
   font-family: "Trebuchet MS";
   font-size: 15px; 
   border-radius: 10px;
-  border: #d9d9d9 solid;
+  border: #ffb366 solid;
   padding: 6px 12px;
+}
+  
+#sub:hover {
+  background-color: #ffa64d;
+  border: #ffa64d solid;
 }
