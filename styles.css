@@ -1,13 +1,29 @@
+/* General styling to keep everything consistent. */
+
 html {
-  font-family: "Georgia";
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   background-color:  #ffb366;
   text-align: center;
   color: #333333;
-  font-weight: normal;
 }
-            
+
+#footer {
+  margin-top: 20px; 
+  border: 0; 
+  display: block;
+  overflow: auto;
+}
+
+/* For a shrinking desktop display */
+@media (min-width: 500px) { 
+  /* To figure out later */            
+}  
+
+/* Homepage */  
+
 .container  {
   margin: auto; 
+  margin-top: 40px;
   max-width: 800px; 
   background-color: white;
   padding: 50px;
@@ -28,59 +44,80 @@ html {
   font-size: 30px;
 }
 
+#start:hover {  
+  background-color: #ffa64d;
+}
+
+/* Form page */
+
 #form {
-  border-color: white;
-  border-width: 10px;
-  border-style: solid;
-  float: left;
+  display: inline-block;
   border-radius: 10px;
   background-color: white;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   padding: 15px;
-}
-
-.inputbox-edit {
-  border-radius: 5px;
-  box-shadow: none; 
-}
-
-#sub {
-  border-radius: 10px;
-  box-shadow: none;
-  background-color: black;
-  font-family: "Serif", Georgia;
-  color: white;
-  padding: 6px;
-  font-size: 15px; 
-}
-
-#header {
-  font-family: "Serif", Georgia;
-  color: black;  
+  text-align: center;
 }
 
 #img {
-   float: right;  
+   display: inline-block;
 }
+
+/* Table only */
 
 #dTable {
   float: left;
   border: 1px solid black;
   border-radius: 5px;
+  border-spacing: 0;
+  border-color: #cccccc;
   padding: 5px;
   margin-bottom:  10px;
-  border-spacing: 0;
 }
 
 #dTable th {
-  border-bottom: 2px solid black;
-  padding: 10px;
+  border-bottom: 2px solid #cccccc;
+  padding: 5px 10px 10px 10px;
 }
 
 #dTable td {
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
 }
 
-#boxes { 
+/* Form only */
+
+#enterInfo {
+  margin: 100px 0px 20px 0px;
+}
+
+input {
+  padding: 7px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  border: #d9d9d9 solid 1px;
+  margin-bottom: 5px;
+  margin-left: -130px;
+}
+
+label {
+  display: inline-block;
   float: left;
+  clear: left;
+  width: 290px;
+  text-align: right;
+  margin: 9px;
+}
+
+#sub {
+  background-color: #ffb366;
+  font-family: "Trebuchet MS";
+  font-size: 15px; 
+  border-radius: 10px;
+  border: #ffb366 solid;
+  padding: 6px 12px;
+}
+  
+#sub:hover {
+  background-color: #ffa64d;
+  border: #ffa64d solid;
 }

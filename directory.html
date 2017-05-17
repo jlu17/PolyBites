@@ -4,28 +4,27 @@
   <head>
     <meta charset="UTF-8" />
     <title>Directory</title>
-    <style type="text/css" ><!-- @import url("styles.css"); --></style>
+    <style type="text/css" >@import url("styles.css");</style>
     <script src="jquery-3.2.1.js"></script>
     <script>
-      //Adds row with info in it.
+      // Adds row with info in it.
       function addRow() {
         var x = document.getElementById("boxes");
         var text = "<tr>";
+        
         for (var i = 0; i < x.length; i++) {
           text += "<td>" + x.elements[i].value + "</td>";
         }
         text += "</tr>";
-        $("#dTable").append(text);
+        $("#dTable").append(text);      
         
+        // Clears boxes after clicking submit.
         x.reset();
       }
       
       $(document).ready(function() {
-        $("#sub").click(function()
-                      
-                        {
-          
-          //printElements();
+        $("#sub").click(function()                     
+        {          
           addRow();
         });
       });    
@@ -39,7 +38,6 @@
             <th>Full Name</th>
             <th>Restaurant</th> 
             <th>Delivery Time</th>
-           
             <th>Delivery Fee</th>
             <th>Phone Number</th>
           </tr> 
@@ -48,25 +46,26 @@
             <td>Example restaurant</td>
             <td>Example time</td>
             <td>Example fee</td>
-            <td>Example  number</td>
+            <td>Example number</td>
         </tr>
         
       </table>
-      <h2 id="header"> Please Enter Your Information</h2>
+      <h2 id="enterInfo"> Please enter your information below...</h2>
   
-    <form id="boxes">
-      Full name: <input class="inputbox-edit" type="text"><br>
-      Restaurant: <input type="text"class="inputbox-edit"><br>
-      Time You Will Go: <input type="text" class="inputbox-edit"><br>
-      Delivery Fee: <input type="text" class="inputbox-edit"><br>
-      Phone Number: <input type="text" class="inputbox-edit"><br><br>
-    </form>
-    <button id="sub" type="submit" >Submit</button>
+      <form id="boxes">
+        <label>Full name: </label><input type="text"><br>
+        <label>Restaurant: </label><input type="text"><br>
+        <label>Time You Will Go: </label><input type="text"><br>
+        <label>Delivery Fee: </label><input type="text"><br>
+        <label>Phone Number: </label><input type="text" ><br><br>
+      </form>
+      <button id="sub">Submit</button>
     </div>
-      <div id="img">
-      <img class="image" src="http://magnushealth.com/wp-content/uploads/2016/09/Poly_logo_colorPT144-232x300.jpg" alt="Poly Logo">
-      </div> 
-    
-    
+    <div id="img">
+      <img src="http://magnushealth.com/wp-content/uploads/2016/09/Poly_logo_colorPT144-232x300.jpg" alt="Poly Logo">
+    </div> 
+    <div id="footer">
+      <p>By Jennifer Lu, Sydney Dahiyat, and Julianna Lai</p>
+    </div>
   </body>
 </html>
