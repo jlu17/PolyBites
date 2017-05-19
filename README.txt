@@ -17,3 +17,10 @@ Version: 2017-05-18
 - This page clears on refresh because we do not use any servers to store the data. Cookies would be a short-term solution for a person using a single browser and returning to it multiple times, but it only stores information on the client side. Adding back-end code and creating a server to store this info would be crucial to letting this website become usable for people on multiple devices and networks. 
 - The website is not completely dynamic, especially as a mobile site. Creating a mobile version of the website would make the website more usable for mobile users.
 - The website is consisted of HTML and CSS files. We would recommend converting the website to an iOS application if this idea becomes more feasible in the future so that more students will use the application.
+
+
+-----Summary----- 
+
+-The idea behind this website model was to create an efficient space for students at poly to participate in a food delivery service.
+- Upper-classmen are the sellers while under-classmen are the buyers. 
+- We wanted to create a user-friendly and simple way for buyers to see where sellers are going during their free periods. To do this, we have a user input that, once submitted, will add information of a seller to a list with necessary information for a transaction between a buyer and seller to occur; information including phone #, restaurant, delivery fee, departure time, and name. 
