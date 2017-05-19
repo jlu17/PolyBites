@@ -1,25 +1,34 @@
 /* General styling to keep everything consistent. */
 
 html {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  background-color:  #ffb366;
+  font-family: 'Bangers', cursive;
+  background-color:  #FE6402;
   text-align: center;
   color: #333333;
 }
 
-#footer {
+.footer {
   margin-top: 20px; 
   border: 0; 
   display: block;
   overflow: auto;
+  font-family:'Trochut', cursive;
+  font-size: 14px;
 }
 
-/* For a shrinking desktop display */
-@media (min-width: 500px) { 
-  /* To be implemented in future project */           
-}  
-
 /* Homepage */  
+#overall {
+  background-color: white;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.title  {
+  font-size: 24px;
+}
 
 .container  {
   margin: auto; 
@@ -28,10 +37,11 @@ html {
   background-color: white;
   padding: 50px;
   border-radius: 10px;
+  font-size: 18px;
 } 
 
 #start {
-  background-color:  #ffb366;
+  background-color:  #FE8D46;
   padding: 20px;
   width: 30%;
   margin: auto;
@@ -45,7 +55,7 @@ html {
 }
 
 #start:hover {  
-  background-color: #ffa64d;
+  background-color: #FE6402;
 }
 
 /* Form page */
@@ -57,10 +67,12 @@ html {
   margin: 20px 20px 0px 20px;
   padding: 15px;
   text-align: center;
+  font-family: 'Bangers', cursive;
 }
 
 #img {
-   display: inline-block;
+  display: inline-block;
+  margin: 10px;
 }
 
 /* Table only */
@@ -103,14 +115,14 @@ label {
   display: inline-block;
   float: left;
   clear: left;
-  width: 290px;
+  width: 180px;
   text-align: right;
   margin: 9px;
 }
 
 #sub {
-  background-color: #ffb366;
-  font-family: "Trebuchet MS";
+  background-color: #FE7A27;
+  font-family: 'Bangers', cursive;
   font-size: 15px; 
   border-radius: 10px;
   border: #ffb366 solid;
@@ -118,6 +130,6 @@ label {
 }
   
 #sub:hover {
-  background-color: #ffa64d;
+  background-color: #FE7A27;
   border: #ffa64d solid;
 }
